@@ -1,0 +1,246 @@
+@import url('reset.css'); /* Importa o reset para remover estilos padrões do navegador */
+
+/* ===== Estilo base da página ===== */
+body {
+  background-color: #000; /* Fundo preto para dar contraste */
+  color: #fff; /* Cor padrão do texto */
+  font-family: Arial, sans-serif; /* Fonte simples e legível */
+}
+
+/* ===== Títulos principais ===== */
+h2 {
+  font-size: 2rem; /* Tamanho grande para destaque */
+  color: #33A8DB; /* Azul característico do tema */
+  font-weight: bold; /* Deixa o texto mais forte */
+  text-transform: uppercase; /* Todas as letras maiúsculas */
+  letter-spacing: 4px; /* Espaçamento entre as letras */
+  margin-bottom: 24px; /* Espaçamento inferior */
+}
+
+/* ===== Parágrafos padrão ===== */
+p {
+  color: #fff; /* Texto branco */
+}
+
+/* ===== Estrutura base das seções ===== */
+section {
+  margin: 100px auto; /* Centraliza a seção com espaçamento vertical */
+}
+
+/* ===== Banner principal do topo ===== */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.7)),
+              url('../images/banner.png') center/cover no-repeat;
+  height: 600px; /* Altura fixa do banner */
+  padding-top: 60px; /* Espaçamento do conteúdo para baixo */
+  border-bottom: 1px solid rgba(51, 168, 219, 0.5); /* Linha decorativa inferior */
+}
+
+/* ===== Conteúdo centralizado no banner ===== */
+.banner .banner-content {
+  max-width: 600px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* ===== Título com efeito gradiente no texto ===== */
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #33A8DB, #1472B7); /* Gradiente azul */
+  -webkit-background-clip: text; /* Clip do fundo no texto */
+  -webkit-text-fill-color: transparent; /* Texto fica "transparente" mostrando só o gradiente */
+}
+
+/* ===== Texto descritivo no banner ===== */
+.banner p {
+  font-size: 1.25rem;
+  margin: 16px 0 24px;
+}
+
+/* ===== Logo circular com fundo transparente ===== */
+.banner .logo {
+  background-color: rgba(0, 0, 0, 0.2); /* Fundo translúcido */
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 16px; /* Centraliza e afasta do conteúdo abaixo */
+  border-radius: 50%; /* Deixa o contêiner redondo */
+  padding: 16px;
+}
+
+/* ===== Imagem dentro da logo ===== */
+.banner .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantém proporção da imagem dentro do círculo */
+}
+
+/* ===== Botão personalizado com gradiente na borda ===== */
+.banner .banner-content button {
+  background: transparent;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #3BA1CD, #1572B7); /* Gradiente na borda */
+  border-image-slice: 10; /* Controla a fatia da imagem de borda */
+  border-radius: 30px; /* Bordas arredondadas */
+  color: #31A8DD;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+/* ===== Área com os módulos do curso ===== */
+#course-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ===== Lista de módulos ===== */
+#course-content .modules-list {
+  margin: 24px 0;
+}
+
+/* ===== Cartão individual de módulo ===== */
+#course-content .module {
+  width: 530px;
+  margin: 0 auto 24px;
+  background-color: #252525; /* Tom escuro para destacar do fundo */
+  color: #fff;
+  border: 1px solid #33A8DB;
+  border-radius: 100px; /* Bordas bem arredondadas */
+  padding: 16px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7); /* Sombra interna para efeito de profundidade */
+}
+
+/* ===== Número do módulo com destaque azul ===== */
+#course-content .module span {
+  color: #33A8DB;
+}
+
+/* ===== Seção com imagem fixa de fundo ===== */
+#transform-world {
+  height: 560px;
+  background: url("../images/woman-code.png") center/cover fixed; /* Imagem fixa no scroll */
+  padding: 200px;
+  border-top: 1px solid rgba(51, 168, 219, 0.5);
+  border-bottom: 1px solid rgba(51, 168, 219, 0.5);
+}
+
+/* ===== Frase de impacto com sombra e destaque ===== */
+#transform-world p {
+  font-size: 2.5rem;
+  font-weight: 900;
+  max-width: 250px;
+  text-transform: lowercase;
+  text-shadow: 3px 2px #33A8DB; /* Sombra azul no texto */
+}
+
+/* ===== Seção sobre desafios profissionais ===== */
+#professional-challenges {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ===== Imagem dentro da seção de desafios ===== */
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+/* ===== Rodapé com gradiente suave e link ===== */
+footer {
+  background: linear-gradient(rgba(50, 168, 219, 0.0), rgba(50, 168, 219, 0.2)); /* Fundo suave */
+  border-top: 1px solid rgba(51, 168, 219, 0.5);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* ===== Logo do rodapé ===== */
+footer .dio-logo {
+  width: 300px;
+}
+
+/* ===== Link estilizado no rodapé ===== */
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* =================================================================== */
+/* ========== MEDIA QUERIES PARA RESPONSIVIDADE ========== */
+/* =================================================================== */
+
+/* ===== Responsividade para tablets (até 1024px) ===== */
+@media (max-width: 1024px) {
+  .banner .banner-content {
+    width: 90%; /* Reduz largura do conteúdo */
+  }
+
+  #course-content {
+    width: 90%;
+  }
+
+  #course-content .module {
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+
+  #professional-challenges {
+    width: 90%;
+  }
+
+  #transform-world {
+    padding: 100px 40px; /* Reduz padding lateral */
+  }
+}
+
+/* ===== Responsividade para celulares (até 768px) ===== */
+@media (max-width: 768px) {
+  .banner {
+    height: auto; /* Altura ajustável */
+    padding: 40px 0;
+  }
+
+  .banner .banner-content h1 {
+    font-size: 2rem; /* Reduz título */
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner .logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  #course-content h2,
+  #professional-challenges h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  #transform-world {
+    padding: 60px 20px;
+    height: auto;
+    background-attachment: scroll; /* Remove o efeito fixo em dispositivos mobile */
+  }
+
+  #transform-world p {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  footer .dio-logo {
+    width: 200px;
+  }
+
+  .banner .banner-content button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+}
+
